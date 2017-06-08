@@ -4,8 +4,8 @@
  * returns new object without target property (passed as an argument).
  * 
  * @param {Object} object
- * @param {String} keyToDelete
- * @returns {Array}
+ * @param {String} propertyToDelete
+ * @returns {Object}
  * @example
  *
  * const Snow = {
