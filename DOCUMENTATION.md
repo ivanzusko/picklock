@@ -7,7 +7,8 @@
 1. [deleteProperty](#deleteProperty(object, property, value))
 
 
-## addProperty(object, property, value)
+## addProperty
+### addProperty(object, property, value)
 This method allows you to add **new** property to the object.
 It accepts target object and property which should be added to the target object and value of this property, and then returns new object with target property (passed as an argument).
 
@@ -34,7 +35,9 @@ console.log(addProperty(Snow, 'name', 'Ramsay')) // => Error: Property 'name' al
 
 
 
-## deleteProperty(object, property)
+## deleteProperty
+### deleteProperty(object, property)
+
 This method allows you to delete property from the object without mutation of the origin.
 It accepts target object and property which should be deleted from the target object, and then returns new object without target property (passed as an argument).
 ```javascript
