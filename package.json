@@ -15,11 +15,13 @@
   "keywords": [
     "utilz",
     "object",
+    "add",
+    "add property",
     "delete",
     "delete property"
   ],
-  "main": "./src/picklock.js",
   "scripts": {
+    "prepublish": "npm run lint && babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
     "test:watch": "jest --watch --coverage",
