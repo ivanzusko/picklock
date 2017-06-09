@@ -28,7 +28,7 @@ export const addProperty = (object, propertyToAdd, value) => {
   });
 
   return {
-    ...object,
+    //...object,
     //[propertyToAdd]: value,
   };
 }
