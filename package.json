@@ -18,7 +18,6 @@
     "delete",
     "delete property"
   ],
-  "main": "./src/picklock.js",
   "scripts": {
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
