@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-1. [addProperty](#addProperty(object, property, value))
+1. [addProperty](#addProperty)
 
-1. [deleteProperty](#deleteProperty(object, property, value))
+1. [deleteProperty](#deleteProperty)
 
 
 ## addProperty
