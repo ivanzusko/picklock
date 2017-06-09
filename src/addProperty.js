@@ -31,4 +31,4 @@ export const addProperty = (object, propertyToAdd, value) => {
     //...object,
     //[propertyToAdd]: value,
   };
-}
+};
