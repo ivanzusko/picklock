@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-1 [addProperty](addProperty)
-1 [deleteProperty](deleteProperty)
+1. [addProperty](#addProperty)
+1. [deleteProperty](#deleteProperty)
 
-## addProperty
+## addProperty(object, property, value)
 This method allows you to add **new** property to the object.
 It accepts target object and property which should be added to the target object and value of this property, and then returns new object with target property (passed as an argument).
 
@@ -30,7 +30,7 @@ It will throw an Error in case if you will try to set property which already exi
 console.log(addProperty(Snow, 'name', 'Ramsay')) // => Error: Property 'name' already exists in target Object!
 ```
 
-## deleteProperty
+## deleteProperty(object, property)
 This method allows you to delete property from the object without mutation of the origin.
 It accepts target object and property which should be deleted from the target object, and then returns new object without target property (passed as an argument).
 ```javascript
