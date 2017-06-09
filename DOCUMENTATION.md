@@ -2,8 +2,10 @@
 
 ## Table of Contents
 
-1. [addProperty](#addProperty)
-1. [deleteProperty](#deleteProperty)
+1. [addProperty](#addProperty(object, property, value))
+
+1. [deleteProperty](#deleteProperty(object, property, value))
+
 
 ## addProperty(object, property, value)
 This method allows you to add **new** property to the object.
@@ -30,6 +32,8 @@ It will throw an Error in case if you will try to set property which already exi
 console.log(addProperty(Snow, 'name', 'Ramsay')) // => Error: Property 'name' already exists in target Object!
 ```
 
+
+
 ## deleteProperty(object, property)
 This method allows you to delete property from the object without mutation of the origin.
 It accepts target object and property which should be deleted from the target object, and then returns new object without target property (passed as an argument).
@@ -43,6 +47,7 @@ const Snow = {
 }
 
 const Stark = deleteProperty(Snow, 'role');
+
 console.log(Stark) // => { name: 'John', age: 20 }
 // Original object is not mutated:
 console.log(Snow) // => { name: 'John', age: 20, role: 'Bastard' }
