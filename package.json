@@ -24,6 +24,7 @@
     "test:watch": "jest --watch --coverage",
     "test": "jest"
   },
+  "main": "./src/index.js",
   "pre-commit": [
     "lint"
   ],
