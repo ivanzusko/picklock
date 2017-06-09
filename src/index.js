@@ -1,2 +1,2 @@
-export * from './deleteProperty';
 export * from './addProperty';
+export * from './deleteProperty';
