@@ -16,6 +16,36 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
+
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+
+    return obj;
+  }
+
+  var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
   /**
    * This method accepts target object and property
    * which should be added to the target object 
@@ -45,9 +75,6 @@
       if (key === propertyToAdd) throw new Error("Property '" + property + "' already exists in target Object!");
     });
 
-    return {
-      //...object,
-      //[propertyToAdd]: value,
-    };
+    return _extends({}, object, _defineProperty({}, propertyToAdd, value));
   };
 });
