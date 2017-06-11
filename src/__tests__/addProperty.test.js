@@ -16,7 +16,7 @@ describe('#addProperty', () => {
 
   it('should fail if the given object already contains target property', () => {
     expect(() => {
-      addProperty(mockObj, 'name', 'Johnny')
+      addProperty(mockObj, 'name', 'Johnny');
     }).toThrow();
   });
 });
