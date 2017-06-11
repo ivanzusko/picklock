@@ -7,7 +7,7 @@ describe('#deleteProperty', () => {
     role: 'Bastard',
   };
 
-  it('should', () => {
+  it('should delete target property from the given object', () => {
     expect(deleteProperty(mockObj, 'role')).toEqual({
       name: 'John',
       age: 20,

@@ -24,7 +24,7 @@
 
 export const addProperty = (object, propertyToAdd, value) => {
   Object.keys(object).map(key => {
-    if (key === propertyToAdd) throw new Error(`Property '${property}' already exists in target Object!`);
+    if (key === propertyToAdd) throw new Error(`Property '${propertyToAdd}' already exists in target Object!`);
   });
 
   return {

@@ -13,4 +13,10 @@ describe('#addProperty', () => {
       role: 'bastard',
     });
   });
+
+  it('should fail if the given object already contains target property', () => {
+    expect(() => {
+      addProperty(mockObj, 'name', 'Johnny')
+    }).toThrow();
+  });
 });
