@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-1. [addProperty](#addProperty)
-1. [deleteProperty](#deleteProperty)
-1. [updateProperty](#updateProperty)
+1. [addProperty](#addproperty)
+1. [deleteProperty](#deleteproperty)
+1. [updateProperty](#updateproperty)
 
 
 ## addProperty
