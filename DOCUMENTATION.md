@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-1. [addProperty](#addproperty)
-
-1. [deleteProperty](#deleteproperty)
+1. [addProperty](#addProperty)
+1. [deleteProperty](#deleteProperty)
+1. [updateProperty](#updateProperty)
 
 
 ## addProperty
@@ -56,3 +56,25 @@ console.log(Stark) // => { name: 'John', age: 20 }
 console.log(Snow) // => { name: 'John', age: 20, role: 'Bastard' }
 ```
 
+
+
+## updateProperty
+### updateProperty(object, property, value)
+
+This method allows you to update property in the object without mutation of the origin.
+It accepts target object, property which should be updated in the target object, and new value of the given property, and then returns new object with the updated target property (passed as an argument).
+```javascript
+import { updateProperty } from 'picklock';
+
+const Snow = {
+  name: 'John',
+  age: 20,
+  role: 'Bastard',
+}
+
+const Stark = updateProperty(Snow, 'age', 21);
+
+console.log(Stark) // => { name: 'John', age: 21, role: 'Bastard' }
+// Original object is not mutated:
+console.log(Snow) // => { name: 'John', age: 20, role: 'Bastard' }
+```

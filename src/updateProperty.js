@@ -1,7 +1,7 @@
 /**
- * This method accepts target object and property
- * which should be updated in the target object 
- * and value of this property, and then 
+ * This method accepts target object, property
+ * which should be updated in the target object,
+ * value of the given property, and then 
  * returns new object with updated property (passed as an argument).
  * 
  * @param {Object} object
