@@ -17,10 +17,12 @@
     "object",
     "immutable",
     "add",
-    "add property",
+    "clone",
     "delete",
-    "delete property",
     "update",
+    "add property",
+    "clone object",
+    "delete property",
     "update property"
   ],
   "scripts": {

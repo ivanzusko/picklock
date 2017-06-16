@@ -1,10 +1,13 @@
 # CHANGELOG
 
+## v0.4.0
+- [cloneObject](https://github.com/ivanzusko/picklock/blob/master/DOCUMENTATION.md#cloneobject)
+
 ## v0.3.0
-- updateProperty
+- [updateProperty](https://github.com/ivanzusko/picklock/blob/master/DOCUMENTATION.md#updateproperty)
 
 ## v0.2.0
-- addProperty
+- [addProperty](https://github.com/ivanzusko/picklock/blob/master/DOCUMENTATION.md#addproperty)
 
 ## v0.1.0
-- deleteProperty
+- [deleteProperty](https://github.com/ivanzusko/picklock/blob/master/DOCUMENTATION.md#deleteproperty)
