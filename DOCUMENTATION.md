@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [addProperty](#addproperty)
-1. [cloneObject](#cloneObject)
+1. [cloneObject](#cloneobject)
 1. [deleteProperty](#deleteproperty)
 1. [updateProperty](#updateproperty)
 
