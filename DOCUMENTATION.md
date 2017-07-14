@@ -5,6 +5,7 @@
 1. [addProperty](#addproperty)
 1. [cloneObject](#cloneobject)
 1. [deleteProperty](#deleteproperty)
+1. [typeOf](#typeof)
 1. [updateProperty](#updateproperty)
 
 
@@ -87,6 +88,32 @@ const Stark = deleteProperty(Snow, 'role');
 console.log(Stark) // => { name: 'John', age: 20 }
 // Original object is not mutated:
 console.log(Snow) // => { name: 'John', age: 20, role: 'Bastard' }
+```
+**[⬆ back to top](#documentation)**
+
+
+
+## typeOf
+### typeOf(variable, comparator)
+
+This method accepts any single variable, which type should be found(in case if only variable passed as an argument) or which type should be compared to the type passed as a second argument.
+
+```javascript
+const Stark = {
+  name: 'John',
+  age: 20,
+}
+
+const Snow = addProperty(Stark, 'role', 'bastard');
+
+const say = () => console.log('Winter is Coming'); 
+
+console.log(typeOf(Stark)) // => "Object"
+console.log(typeOf(Stark, 'Object')) // => true
+console.log(typeOf(Stark, 'object')) // => true
+console.log(typeOf(Snow)) // => "Object"
+console.log(typeOf(Snow, 'String')) // => false
+console.log(typeOf(say)) // => "Function"
 ```
 **[⬆ back to top](#documentation)**
 
