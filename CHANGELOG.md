@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v0.5.0
+- [typeOf](https://github.com/ivanzusko/picklock/blob/master/DOCUMENTATION.md#typeof)
+
 ## v0.4.0
 - [cloneObject](https://github.com/ivanzusko/picklock/blob/master/DOCUMENTATION.md#cloneobject)
 
